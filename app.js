@@ -71,7 +71,7 @@ async function thesaurizeText({ logger, command, ack, say }) {
       let mutatedText = thesaurize(command.text)
       logger.debug(command);
       await ack();
-      await say(`${command.user_name}: ${command.text} \n Thesaurize: ${mutatedText}`);
+      await say(`${command.user_name}: ${command.text} \n\n Thesaurize: ${mutatedText}`);
     } catch (e) {
       logger.error(e);
       await ack(`I done borked`);

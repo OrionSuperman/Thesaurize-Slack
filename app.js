@@ -82,7 +82,7 @@ async function thesaurizeText({ logger, command, ack, say }) {
   try {
     await app.init();
     await app.start();
-    console.log("⚡️ Bolt app is running!");
+    console.log("⚡️ Bolt app is running! ");
   } catch (e) {
     console.log(e);
     process.exit(1);
